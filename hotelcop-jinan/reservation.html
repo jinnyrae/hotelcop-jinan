@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HôtelCop, Réservatin</title>
+    <meta name="description" content="HôtelCop est un hôtel 5 étoiles, situé en plein cœur de Paris. Il vous propose un séjour somptueux, un restaurant gastronomique ,et un spa pour des moments de détente et de bien-être. ">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+    <link rel="stylesheet" href="css/hotelcop.css">
+    
+   
+    
+</head>
+
+
+<!-- Contenu du site-------->
+
+<body class="print">
+
+    <!--Header---------->
+    <header>
+    <!--MENU 1-->
+        <nav class="navbar1">
+            <div class="input-icon">
+                <input id="site-search" type="search" placeholder="rechercher">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            
+                <div style="margin-right: 50px;"> 
+                   <select id="lang" style="width: 50px;">
+                        <option>Fr</option>
+                        <option>En</option>
+                   </select>
+                    <a id="panier" href="#"><i class="fas fa-shopping-basket fa-lg"></i></a>
+                </div>
+        </nav>
+         <!--MENU 2-->
+          
+         <nav class="navbar navbar-expand-md navbar-light mb-4">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img id="logo" src="img/ logo-nouv.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" style="color:  rgb(51, 88, 51);" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    L'HÔTEL
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light" style="background-color:#f5efc7;" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li><a class="dropdown-item" href="apropos.html">QUI SOMMES-NOUS ?</a></li>
+                        <li><a class="dropdown-item" href="contact.html">CONTACT</a></li>
+                        <li><a class="dropdown-item" href="avis.html">AVIS</a></li>
+                        <li><a class="dropdown-item" href="reservation.html">RESEVATION</a></li>
+                        <li><a class="dropdown-item" href="evenements.html">EVÉNEMENT</a></li>
+                        <li><a class="dropdown-item" href="press.html">PRESSE</a></li>
+                        <li><a class="dropdown-item" href="actualites.html">ACTUALITES</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" style="color: rgb(51, 88, 51)" href="chambre-suite.html">HÉBERGEMENT</a>
+                 </li>
+             
+           
+              <li class="nav-item">
+                <a class="nav-link" style="color:  rgb(51, 88, 51)" href="restaurant.html">RESTAURANT</a>
+              </li>
+             
+          
+              <li class="nav-item">
+                <a class="nav-link" style="color:  rgb(51, 88, 51)" href="spa.html" tabindex="-1" aria-disabled="true">SPA</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </header> <!-- Fin de header-->
+
+
+     <main><!------------ Main-------------------------------------------------------->
+
+     <!-- Image d'acceuil------------->
+
+     <div class="container-fluid">
+        <div class="row">
+            <img class="col-12 img-suite" src="img/reservation-.jpg" alt="RESERVATION HOTEL">
+        </div>
+    </div>
+
+    <!----------------------------------------Formulaire----------------------------->
+     <h1 class="pb-4 pt-5 mb-0 text-center" >Demande de réservation</h1>
+    <div class="container">
+        <div class="row text-center">
+          <article>
+              <p>Merci de compléter le formulaire ci-dessous</p>
+              <span style="color: rgb(51, 88, 51); font-family:'Thasadith-sans-serif';">Les champs marqués d'un astérisque(*) sont obligatoires.</span>
+          </article>
+
+        </div>
+
+    </div>
+    <div class="container">
+
+     <div class="row col text-center pb-5 pt-5 ">
+       
+           <fieldset>
+             <label for="select" class="label">Choisir un service</label><br>
+             <select class="form" name="service">
+                 <option value="chambre">Réesérver une chambre</option>
+                 <option value="table">Résérver une table</option>
+                 <option value="soin">Résérver SPA</option>
+             </select>
+            </fieldset>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-around">
+              <div class="col-md-3">
+                <label for="name" class="label" for="fname">Nom *</label>
+                <input class="form" type="text" id="fname" name="fname"><br><br>
+            </div>
+            <div class="col-md-3">
+                <label for="prenom" class="label" for="lname">Prenom *</label>
+                <input class="form" type="text" id="lname" name="lname"><br><br>
+            </div>
+        </div>
+    </div>
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-md-3">
+                <label for="email" class="label" for="email">Email *</label>
+                <input class="form email" type="email" name="email"><br><br>
+            </div>
+            <div class="col-md-3">
+                <label for="tel" class="label" for="telephone">Telephon *</label>
+                <input class="form tel" type="tel" name="telephone"><br><br>
+                <span></span>
+            </div>
+        </div>
+    </div>
+          <div class="container">
+              <div class="row justify-content-around">
+               <div class="col-md-3">
+                <label for="bday" class="label" for="birthday">Date de naissence *</label>
+                <input class="form" type="date" id="birthday" name="birthday"><br><br>
+            </div>
+            <div class="col-md-3">
+               
+                  <label for="rdate" class="label">DATE SOUHAITÉE * </label>
+                  <input  class="form" type="datetime-local" id="meeting-time"
+                   name="meeting-time" value="2018-06-12T19:30"
+                    min="2018-06-07T00:00" max="2018-06-14T00:00">
+                   
+               
+            </div>
+        
+        </div>
+     </div>
+
+      
+     <form  class="text-center pb-4 pt-3 " > <input style="max-width: 250px;" class="form" type="submit" value="Envoyer" disabled></form>
+     <span></span>
+     
+     </main>
+      
+
+
+
+
+
+     <!----------------------------------------- FOOTER--------------------------------------------------->
+     <footer class="footer container-fluid">
+                    
+        <div class="row">
+                       <article class="mt-3 col-sm-6 col-md-3 col-lg-4-3 text-justify">
+                   <h3>Liens Divers</h3>
+               <ul class="list">
+               
+                   <li><a class="bas" href="plan.html">Plans de Site</li></a>
+                   <li><a class="bas" href="mention-legale.html">Mentions Légales</li></a>
+                   <li><a class="bas" href="cgv.html">Condition Générales de  Vente</li></a>
+               </ul>
+           
+               </article >
+
+               <div class="mt-3 mt-3 col-sm-6 col-md-3 col-lg-3">
+                 <h3>Newsletter</h3>
+                   <input style="background-color:#FBF9EA ;border:#b19724e3 solid 2px; outline: none; " type="email" id="email"
+                    pattern=".+@globex.com" size="30" required>
+                    <div class="container">
+                        <input style="margin-top: 20px; background-color:#FBF9EA ;border:#b19724e3 solid 2px; outline: none;" type="submit" value="Subscribe">
+                      </div>
+                 
+                   
+   
+               </div>
+               <article class="mt-3 col-sm-6 col-md-3 col-lg-3 text-justify">
+               <h3>Nous Joindre</h3>
+               <ul class="list">
+                   <li><a class="bas" href="acces.html">Accès</li></a>
+                   <li><a class="bas" href="contact.html">Contact</li></a>
+                   <li><a class="bas" href="recrutement.html">Recrutement</li></a>
+               </ul>
+               </article>
+               
+           <div class="mt-3 mt-3 col-sm-6 col-md-3 col-lg-3">
+           
+           <h3>Nous Suivre</h3>
+               <a href="#"><i class="fab bas fa-twitter"></i></a>
+               <a href="#"><i class="fab bas fa-facebook-f" style="margin: 10px;"></i></a>
+               <a href="#"><i class="fab bas fa-instagram-square"></i></a>
+               <p style="font-size: 1.5rem; font-family:'Thasadith-sans-serif';color:#b19724e3 ;">Imprimer la page</p>
+               <a onclick= "window.print(); return false;"><i class="fas bas fa-print"></i></a>
+               
+           </div>
+           <p style="color:#f5efc7; font-size: 1rem;">&copy;HôtelCop Tout Droits Résérvées - 2021</p>
+       </div>
+               </footer>
+               
+               <!----------------------------FIN FOOTER------------------------------------------------->
+                
+    <script src="js/js/hotelcop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a2acc1ce42.js" crossorigin="anonymous"></script>
+               
+</body>
+</html> 

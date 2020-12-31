@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+html{
+height: 100vh;
+bottom: 0;
+
+}
+body{
+    min-height: 100%;
+    margin: 0 ;
+    padding: 0;
+    padding-bottom: 42rem;
+    position: relative;
+    background: #FBF9EA;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family:'Gayathri', sans-serif;
+    src:url('../fonte/Gayathri-Thin.ttf');
+    font-family:'Parisienne','cursive' ;
+    src: url('../fonte/Parisienne-Regular.ttf');
+    font-family:'Thasadith-sans-serif' ;
+    src: url('../fonte/Thasadith-Regular.ttf');
+
+}
+h1 {
+  font-family: 'Parisienne','cursive' !important ;
+  color: rgb(51, 88, 51);
+
+}
+h2{
+    font-family: 'Parisienne','cursive';
+    color:  #b19724e3;
+}
+ h4{
+    font-family:'Gayathri', sans-serif;
+ color:  #b19724e3;
+}
+  h3{
+      font-size: 1.5rem;
+      font-family:'Thasadith-sans-serif' ;
+  }
+
+p{
+    font-family:'Thasadith-sans-serif' ;
+    font-size: 1.5rem;
+    color: rgb(51, 88, 51);
+}
+ 
+a{
+    cursor: pointer;
+}
+ hr{
+     border-top: 2px;
+     color: #b19724e3 solid ;
+ }
+     
+
+/*-----------------------------------------------HEADER----------------------------------------------*/
+header{
+    position: absolute;
+    top: 0;
+     width: 100%;
+    z-index: 999;
+}
+/*-------NAVBAR VERT-------------*/
+.navbar1{
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(36, 58, 36);
+    height: 70px;
+    font-family:'Gayathri', sans-serif;
+    color:  #b19724e3;
+    color: #FBF9EA;
+}
+    
+#lang{
+   
+     margin-right: 20px;
+    outline: none;
+   background:   rgb(51, 88, 51);
+   color:  #b19724e3;
+    border: 1px  #b19724e3 solid;
+    align-self: end;
+}
+
+#site-search{
+width: 100%; 
+max-width: 250px;
+height: 30px;
+margin-left: 20px;
+border: 2px solid  #b19724e3 ;
+border-radius: 4px;
+outline: none;
+padding: 8px;
+box-sizing: border-box;
+ justify-self: start;
+}
+#panier .fas{
+    color: #b19724e3;
+    margin-right: 20px;
+    
+}
+#lang , #panier .fas{
+    justify-items: flex-end;
+}
+.input-icon{
+    position: relative;
+    margin-left: 40px;
+}
+.input-icon i{
+    position: absolute; right: 0; top: 0px; padding: 9px 8px; color: #b19724e3 ;
+}
+/*--------------NAVBAR BEIGE--------------*/
+
+#logo{
+    width: 80px;
+    height: 80px;
+     margin-left: 50px;
+}
+.navbar{
+background-color:#f5efc7; 
+ 
+}
+
+.navbar a{
+    color: rgb(51, 88, 51); ; 
+    font-family:'Gayathri', sans-serif;
+    color:  #b19724e3;
+}
+.navbar a:hover{
+    color: #b19724e3;
+}
+  
+ 
+ /*______________________________________________Main________________________________*/
+main{
+    padding-top: 60px;
+}
+ 
+
+/*----------------------------Carousel----------------------------*/
+  
+ .macarousel{
+     padding-right: 0;
+     padding-left: 0; 
+ }
+  
+ .carousel-item,
+ .carousel-inner,
+ .carousel-inner img {
+   height: 100%;
+   width: 100%;
+ }
+ 
+ .carousel-item {
+   text-align: center;
+ }
+  
+ .carousel {
+    height: 60% ;
+  }
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+/*_-----------------------------Fin carousel__________________________________*/
+/*---------------------------PAGE D'ACCUEIL------------------------------------*/
+
+.acceuil{
+    font-family:'Thasadith-sans-serif' ;
+    font-size: 1.5rem;
+}
+.bouton-accueil{
+    display:block;
+    width: 50px;
+}
+.carte{
+
+    font-size: 0.5rem;
+    text-align: center;
+    font-family:'Thasadith-sans-serif';
+    color:rgb(36, 58, 36) ; 
+    margin-bottom: 200px;
+     
+}
+ 
+
+
+/*------------------------Chambres-----------------------------*/
+.list-chbr{
+    list-style-type: none;
+}
+
+.icon-chbr{
+font-size: 1rem;
+font-family:'Thasadith-sans-serif';
+color:#b19724e3;
+}
+.img-suite{
+    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.chbr{
+    padding-bottom: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    
+}
+.mon-txt{
+    margin-bottom: 70px;
+    padding-top: 20px;
+}
+.text-prsentation{
+    font-family:'Thasadith-sans-serif';
+    padding-bottom: 50px;
+    color: rgb(51, 88, 51);
+    font-size: 1.5rem;
+}
+
+.chbr{
+    font-family:'Parisienne','cursive' !important ;
+    color: rgb(51, 88, 51);
+    font-size: 3.5rem;  
+    text-decoration: none;
+}
+.chbr:hover{
+    text-decoration: underline 3px #b19724e3 ;
+    color: rgb(51, 88, 51);
+}
+.en-cours{
+    text-decoration: underline  3px #b19724e3 ;
+    
+}
+.rsv{
+    background: #f5efc7;
+    border-radius: 5px;
+    border:rgb(51, 88, 51) 1px solid;
+    color: rgb(51, 88, 51);
+    outline: none;
+    margin-bottom: 50px;
+}
+/*--------------------SUITES-------------------------------*/
+
+#showSuite{
+ display: none;
+}
+
+.separe{
+    border-bottom: 1px #b19724e3 solid;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.img-suite{
+    margin-bottom: 25px;
+}
+
+.separe1{
+    border-bottom: 1px #b19724e3 solid;
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+/*-----------------------------------------RESTAURANT---------------------------------*/
+.custom-body{
+   
+    background:  #FBF9EA;
+    font-family:'Thasadith-sans-serif';
+    color: rgb(51, 88, 51);
+}
+.custom-header{
+    text-align: center; 
+    font-family: 'Parisienne','cursive' !important ;
+   background:  #f5efc7;
+   color: rgb(51, 88, 51);
+}
+
+ #tea{
+     text-align: left;
+ }
+
+/*-------------------------------------RESERVATION---------------------------------*/
+.form{
+    height: 35px;
+   outline: none;
+   width: 100%; 
+max-width: 500px;
+border: 2px solid  #b19724e3 ;
+border-radius: 4px;
+background: #FBF9EA ;
+color:rgb(51, 88, 51) ;
+font-family:'Gayathri', sans-serif;
+}
+.label{
+    color:rgb(51, 88, 51) ;
+    font-family:'Gayathri', sans-serif;
+}
+/*--------------------------------------AVIS----------------------------------------*/
+.form1{
+    color:rgb(51, 88, 51) ;
+    font-family:'Gayathri', sans-serif;
+    background: #FBF9EA ;
+    border: 2px solid  #b19724e3 ;
+    max-width: 70%;
+}
+/*-------------------------------Acces-------------------------------------------*/
+.acces{
+    font-family:'Gayathri', sans-serif;
+    font-size: 1.25rem;
+    color: rgb(51, 88, 51);
+}
+ /*-------------------------------PLAN-------------------------------------*/
+ .plan{
+     border: 2px solid #b19724e3 ;
+     height: 70%;
+     width: 70%;
+     margin-top: 15rem;
+     padding-top: 2rem;
+ }
+.shadow{
+    list-style: none;
+}
+ .plan ul{
+     list-style: none;
+     text-decoration: none;
+ }
+ .plan ul a {
+    font-family:'Thasadith-sans-serif' ;
+    color:rgb(51, 88, 51) ;
+    font-size: 1.5rem;
+ }
+ 
+.hover:hover{
+    text-decoration: underline  #b19724e3;
+     
+}
+ .titre{
+    color:  #b19724e3;
+    font-size: 1.75rem;
+ }
+ .thover:hover{
+     text-decoration: underline;
+     color:rgb(51, 88, 51) ;
+ }
+
+ .plan a {
+     text-decoration: none;
+ }
+  
+
+ /*________________________________FOOTER___________________________________________*/
+.footer{
+ position: absolute;
+bottom: 0;
+ width: 100%;
+ left: 0;
+ right: 0;
+ background: rgb(36, 58, 36); 
+ font-family:'Thasadith-sans-serif' ;
+ color:  #b19724e3;
+ text-align: center;
+ list-style: none;
+ text-decoration: none;
+ box-sizing: border-box;
+}
+ 
+ .list{
+     list-style-type: none;
+ }    
+.bas{
+    color: #b19724e3;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.bas:hover{
+    color: #f5efc7;
+}
+ /*______________________________Fin Footer________________________________________

@@ -1,0 +1,12 @@
+body{
+    visibility: hidden;
+    
+}
+.print{
+    visibility: visible;
+}
+.print{
+page-break-inside:avoid;
+page-break-after:auto;
+page-break-before:auto;
+}
